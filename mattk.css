@@ -1,0 +1,57 @@
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#page {
+  width:811px;
+  margin: 0 auto
+}
+
+#header {
+  border-bottom: 4px solid #000;
+  flex-direction: row;
+  align-content: center;
+}
+
+#name {
+  font-family: "tinos";
+  font-size: 70px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0.5em
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 26px;
+  padding: 0.5em
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+}
+
+.slide {
+  height: 36em;
+  width: 100%
+}
+
+.slide-about {
+  display: none
+}
+
+.slide-contact {
+  display: none
+}
+
+#footer {
+  border-top: 4px solid #000;
+}
