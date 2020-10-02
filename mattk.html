@@ -9,9 +9,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="mattk.css"  rel="stylesheet">
+  <style> 
+    body { 
+        animation: fadeInAnimation ease 3s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards; 
+    } 
+    @keyframes fadeInAnimation { 
+        0% { 
+            opacity: 0; 
+        } 
+        100% { 
+            opacity: 1; 
+        } 
+    } 
+</style>
 </head>
 
 <body>
+  <script>document.body.className += ' fade-out';</script>
+
 
   <div id="header">
     <p id="name">Matt Kavanagh</p>
@@ -23,24 +40,38 @@
   </div>
 
   <div class="carousel">
-    <button class="carousel__button previous" id="previous"></button>
     <div class="carousel__images">
+
       <div class="slide about-slide">
-        about
+        <div class="about-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Sed sed risus pretium quam vulputate dignissim suspendisse in est. Egestas diam in arcu cursus euismod. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Risus pretium quam vulputate dignissim. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Nulla pharetra diam sit amet nisl suscipit. Vulputate dignissim suspendisse in est ante. Adipiscing diam donec adipiscing tristique. Vel pretium lectus quam id leo in vitae. Nulla pharetra diam sit amet nisl. Ornare suspendisse sed nisi lacus sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Sed sed risus pretium quam vulputate dignissim suspendisse in est. Egestas diam in arcu cursus euismod. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Risus pretium quam vulputate dignissim. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Nulla pharetra diam sit amet nisl suscipit. Vulputate dignissim suspendisse in est ante. Adipiscing diam donec adipiscing tristique. Vel pretium lectus quam id leo in vitae. Nulla pharetra diam sit amet nisl. Ornare suspendisse sed nisi lacus sed.
+        </div>
+        <div class="about-image"><img src="img/about-test.png"></div>
       </div>
+
       <div class="slide work-slide">
         work
       </div>      
+
       <div class="slide contact-slide">
-        contact
+        <div class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Sed sed risus pretium quam vulputate dignissim suspendisse in est. Egestas diam in arcu cursus euismod. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Risus pretium quam vulputate dignissim. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Nulla pharetra diam sit amet nisl suscipit. Vulputate dignissim suspendisse in est ante. Adipiscing diam donec adipiscing tristique. Vel pretium lectus quam id leo in vitae. Nulla pharetra diam sit amet nisl. Ornare suspendisse sed nisi lacus sed.</div>
       </div>
+
     </div>
-    <button class="carousel__button next" id="next">></button>
+    <script>
+      const onLoadSet = document.querySelector('.carousel__images');
+      onLoadSet.style.transform = `translateX(-844px)`;
+      console.log("howdy")
+    </script>
   </div>
 
   <div id="footer"></div>
 
   <script src="script.js" type="text/javascript"></script>
+  <script>
+    const onLoadSet = document.querySelector('.carousel__images');
+    onLoadSet.style.transform = `translateX(-844px)`;
+  </script>
 </body>
 
 </html>

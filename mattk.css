@@ -4,6 +4,21 @@
   padding: 0;
 }
 
+body { 
+  animation: fadeInAnimation ease 3s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
+
 html {
   font-size: 10px;
 }
@@ -43,6 +58,10 @@ button {
   outline: none;
 }
 
+button:hover {
+  color: gray
+}
+
 .slide {
   height: 60em;
   width: 844px
@@ -62,33 +81,25 @@ button {
   transition: transform 0.25s;
   width: 2532px
 }
-.carousel__images img {
-  border-radius: 5px;
+
+.about-slide {
+  display: flex;
+  flex-direction: row;
 }
-/* .carousel__button {
-  background: teal;
-  border: 0;
-  border-radius: 50%;
-  color: white;
-  cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: bold;
-  height: 3rem;
-  opacity: 0.25;
-  position: absolute;
-  transition: opacity 0.25s;
-  width: 3rem;
-  z-index: 1;
-} */
-.carousel__button.previous {
-  left: 5px;
+
+.about-text {
+  font-size: 16px;
+  margin: 25px
 }
-.carousel__button.next {
-  right: 5px;
+
+.about-image {
+  margin: 25px
 }
-.carousel__button:hover {
-  opacity: 0.5;
+
+.contact-slide {
+
 }
+
 
 #footer {
   border-top: 4px solid #000;
