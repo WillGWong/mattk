@@ -4,12 +4,6 @@
   padding: 0;
 }
 
-body { 
-  animation: fadeInAnimation ease 3s; 
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards; 
-} 
-
 @keyframes fadeInAnimation { 
   0% { 
       opacity: 0; 
@@ -24,12 +18,12 @@ html {
 }
 
 #header {
-  border-bottom: 4px solid #000;
   width: 811px;
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 2rem auto
+  margin: 2rem auto;
+
 }
 
 #name {
@@ -39,15 +33,22 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0.5em
+  margin: 0.5em;
+  animation: fadeInAnimation ease 1.5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
 }
 
 #nav {
+  border-bottom: 2px solid #000;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-size: 26px;
-  padding: 0.5em
+  padding: 0.5em;
+  animation: fadeInAnimation ease 3s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
 }
 
 button {
@@ -59,7 +60,7 @@ button {
 }
 
 button:hover {
-  color: gray
+  color: gray;
 }
 
 .slide {
@@ -74,6 +75,9 @@ button:hover {
   overflow: hidden;
   position: relative;
   width: 844px;
+  animation: fadeInAnimation ease 3s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
 }
 .carousel__images {
   display: flex;
@@ -102,10 +106,13 @@ button:hover {
 
 
 #footer {
-  border-top: 4px solid #000;
+  border-top: 2px solid #000;
   width: 811px;
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 2rem auto
+  margin: 2rem auto;
+  animation: fadeInAnimation ease 3s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
 }
