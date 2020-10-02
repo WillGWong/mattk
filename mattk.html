@@ -16,27 +16,30 @@
   <div id="header">
     <p id="name">Matt Kavanagh</p>
     <div id="nav">
-      <a href="about.html">About</a>
-      <a href="work.html">Work</a>
-      <a href="contact.html">Contact</a>
+      <button id="about" onClick="aboutFunction()" >About</button>
+      <button id="work" onClick="workFunction()">Work</button>
+      <button id="contact" onClick="contactFunction()">Contact</button>
     </div>
   </div>
 
   <div class="carousel">
     <button class="carousel__button previous" id="previous"></button>
-    <div class="carousel__images slide">
+    <div class="carousel__images">
       <div class="slide about-slide">
-        <img src="https://via.placeholder.com/300" alt="">
+        about
       </div>
       <div class="slide work-slide">
-        <img src="https://via.placeholder.com/300" alt="">
+        work
       </div>      
       <div class="slide contact-slide">
-        <img src="https://via.placeholder.com/300" alt="">
+        contact
       </div>
     </div>
     <button class="carousel__button next" id="next">></button>
   </div>
+
+  <div id="footer"></div>
+
   <script src="script.js" type="text/javascript"></script>
 </body>
 
