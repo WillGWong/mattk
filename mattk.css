@@ -100,10 +100,16 @@ button:hover {
   margin: 25px
 }
 
-.contact-slide {
-
+.gallery img {
+  transition: 1s;
+  padding: 5px;
 }
 
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1)
+
+}
 
 #footer {
   border-top: 2px solid #000;
