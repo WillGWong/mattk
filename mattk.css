@@ -67,6 +67,10 @@ button {
   outline: none;
 }
 
+#work {
+  color: gray
+}
+
 button:hover {
   color: gray;
 }

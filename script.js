@@ -1,5 +1,9 @@
 const carouselImages = document.querySelector('.carousel__images');
 const numberOfImages = document.querySelectorAll('.slide').length;
+const aboutNav = document.querySelector('#about')
+const workNav = document.querySelector('#work')
+const contactNav = document.querySelector('#contact')
+
 let imageIndex = 1;
 let translateX = 0;
 
@@ -12,6 +16,9 @@ function aboutFunction() {
     translateX += 1688;
   }
   carouselImages.style.transform = `translateX(${translateX}px)`;
+  aboutNav.style.color = 'gray'
+  workNav.style.color ='black'
+  contactNav.style.color = 'black'
 }
 
 function workFunction() {
@@ -22,8 +29,10 @@ function workFunction() {
     imageIndex --;
     translateX += 844;
   }
-  console.log(carouselImages)
   carouselImages.style.transform = `translateX(${translateX}px)`;
+  aboutNav.style.color = 'black'
+  workNav.style.color ='gray'
+  contactNav.style.color = 'black'
 }
 
 function contactFunction() {
@@ -35,4 +44,7 @@ function contactFunction() {
     translateX -= 844;
   }
   carouselImages.style.transform = `translateX(${translateX}px)`;
+  aboutNav.style.color = 'black'
+  workNav.style.color ='black'
+  contactNav.style.color = 'gray'
 }
