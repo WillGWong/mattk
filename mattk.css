@@ -67,6 +67,10 @@ button {
   outline: none;
 }
 
+#work {
+  color: gray
+}
+
 button:hover {
   color: gray;
 }
@@ -97,15 +101,39 @@ button:hover {
 .about-slide {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .about-text {
   font-size: 16px;
-  margin: 25px
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+
+.brandlist {
+  text-align: center;
+}
+
+.brandlist-link {
+  text-decoration: none;
+  font-size: 18px
+}
+
+.brandlist-link:visited {
+  text-decoration: none;
+  color: #000;
+  border: none
+}
+
 
 .about-image {
   margin: 25px
+}
+
+.gallery {
+  margin-left: 11px
 }
 
 .gallery img {
@@ -117,6 +145,45 @@ button:hover {
   filter: grayscale(100%);
   transform: scale(1.1)
 
+}
+
+.contact-slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-middle {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.insta-link {
+  text-decoration: none;
+  font-size: 24px
+}
+
+.insta-link:visited {
+  text-decoration: none;
+  color: #000;
+  border: none
+}
+
+.insta-icon {
+  width:4%;
+
+}
+
+.contact-footer {
+  margin-left: auto;
+  margin-right: auto
 }
 
 #footer {
