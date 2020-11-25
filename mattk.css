@@ -119,6 +119,34 @@ button:hover {
 
 }
 
+.contact-slide{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-middle {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.insta-link {
+  text-decoration: none;
+  font-size: 24px
+}
+
+.insta-link:visited {
+  text-decoration: none;
+  color: #000;
+  border: none
+}
+
+.insta-icon {
+  width:4%;
+
+}
+
 #footer {
   border-top: 2px solid #000;
   width: 811px;
