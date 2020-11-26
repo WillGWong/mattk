@@ -221,9 +221,9 @@ button:hover {
   animation-fill-mode: forwards; 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   button {
-    font-size: 55px
+    font-size: 54px
   }
 
   .about-bio {
@@ -232,10 +232,6 @@ button:hover {
 
   .inquiries {
     font-size: 26px
-  }
-
-  .namelogo {
-    width: 110%
   }
 
 }
