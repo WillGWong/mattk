@@ -234,4 +234,8 @@ button:hover {
     font-size: 26px
   }
 
+  .namelogo {
+    width: 110%
+  }
+
 }
