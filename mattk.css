@@ -18,6 +18,11 @@
   src: url('TRINNU1H.TTF') format('truetype'); 
 }
 
+@font-face {
+  font-family: 'nunito';
+  src: url('NunitoSans-Light.ttf')
+}
+
 html {
   font-size: 10px;
 }
@@ -46,8 +51,20 @@ html {
   animation-fill-mode: forwards; 
 }
 
+.namelogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3.5em;
+  animation: fadeInAnimation ease 1.5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; 
+}
+
 #nav {
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -129,7 +146,8 @@ button:hover {
 
 
 .about-image {
-  margin: 25px
+  margin: 25px;
+  margin-top: 44px
 }
 
 .gallery {
@@ -143,7 +161,7 @@ button:hover {
 
 .gallery img:hover {
   filter: grayscale(100%);
-  transform: scale(1.1)
+  transform: scale(1.1);
 
 }
 
@@ -165,6 +183,11 @@ button:hover {
   flex-direction: column;
   justify-content: center;
 }
+
+.contact-email {
+  font-family: 'nunito'
+}
+
 .insta-link {
   text-decoration: none;
   font-size: 24px
