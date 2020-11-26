@@ -113,8 +113,6 @@ button:hover {
   transform: translateX(0);
   transition: transform 0.25s;
   width: 2532px;
-  -webkit-overflow-scrolling: touch;
-
 }
 
 .about-slide {
@@ -221,4 +219,19 @@ button:hover {
   animation: fadeInAnimation ease 3s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
+}
+
+@media only screen and (min-width: 768px) {
+  button {
+    font-size: 55px
+  }
+
+  .about-bio {
+    font-size: 34px
+  }
+
+  .inquiries {
+    font-size: 26px
+  }
+
 }
