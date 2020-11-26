@@ -112,7 +112,9 @@ button:hover {
   display: flex;
   transform: translateX(0);
   transition: transform 0.25s;
-  width: 2532px
+  width: 2532px;
+  -webkit-overflow-scrolling: touch;
+
 }
 
 .about-slide {
